@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signature app</title>
+  <link rel="stylesheet" href="./signature.css">
+</head>
+<body>
+  <div id="main">
+    <div class="top">
+
+
+
+      <div class="block">
+        <p>Text Color Picker</p>
+        <input type="color" class="form-control"
+        id="text-color" >
+      </div>
+
+
+
+      <div  class="block">
+        <p>background</p>
+        <input type="color" class="form-control"
+        id="background-color">
+      </div>
+
+
+      <div  class="block">
+        <p>Font Size</p>
+        <select id="fontsizepicker"  class="custom-select">
+          <option value="5">5px</option>
+          <option value="10">10px</option>
+          <option value="20">20px</option>
+          <option value="30">30px</option>
+          <option value="40">40px</option>
+          <option value="50">50px</option></select>
+      </div>
+
+
+    </div>
+    <canvas id="canvas-screen" width="800px" height="500px"></canvas>
+    <div class="bottom-buttons">
+      <div class="btn" style="background-color: red ;color: white;" id="clearbtn">clear</div>
+      <div class="btn" style="background-color: green; color: white;" id="saveAndDownload">Save and Download</div>
+      <div class="btn" style="background-color: yellow; color: black;" id="retrieveAndSavedSignature">retrieve saved signature</div>
+    </div>
+  </div>
+  <script src="./signature.js"></script>
+</body>
+</html>
